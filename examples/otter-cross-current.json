@@ -1,0 +1,60 @@
+{
+    "plant":  {
+                  "type":  "fossen_otter_educational",
+                  "parameters":  "boats/fossen_otter.json"
+              },
+    "fixed_dt_s":  0.008333333333333333,
+    "origin":  {
+                   "latitude_deg":  37.8060,
+                   "longitude_deg":  -122.4650,
+                   "altitude_msl_m":  0.0,
+                   "geoid_undulation_m":  -32.0,
+                   "heading_deg":  0.0
+               },
+    "initial_state":  {
+                          "position_ned_m":  [
+                                                 0.0,
+                                                 0.0,
+                                                 0.037712608567758
+                                             ],
+                          "q_body_to_ned":  [
+                                                0.999915394282329,
+                                                0.0,
+                                                -0.013007854443166792,
+                                                0.0
+                                            ],
+                          "velocity_body_mps":  [
+                                                    0.0,
+                                                    0.0,
+                                                    0.0
+                                                ],
+                          "omega_body_radps":  [
+                                                   0.0,
+                                                   0.0,
+                                                   0.0
+                                               ],
+                          "propeller_speed_radps":  [
+                                                        0.0,
+                                                        0.0
+                                                    ]
+                      },
+    "water":  {
+                  "surface_down_m":  0.0,
+                  "current_ned_mps":  [
+                                          0,
+                                          0.2,
+                                          0
+                                      ]
+              },
+    "command":  {
+                    "left_propeller_speed_radps":  75.0,
+                    "right_propeller_speed_radps":  75.0
+                },
+    "controller":  {
+                       "udp_port":  9002,
+                       "control_port":  9003
+                   },
+    "cesium":  {
+                   "tileset_asset_id":  1
+               }
+}

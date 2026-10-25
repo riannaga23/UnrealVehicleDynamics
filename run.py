@@ -93,6 +93,9 @@ def build(editor, profile):
     if sys.platform == "darwin":
         script = engine / "Build" / "BatchFiles" / "Mac" / "Build.sh"
         platform = "Mac"
+    elif sys.platform == "win32":
+        script = engine / "Build" / "BatchFiles" / "Build.bat"
+        platform = "Win64"
     else:
         script = engine / "Build" / "BatchFiles" / "Linux" / "Build.sh"
         platform = "Linux"
